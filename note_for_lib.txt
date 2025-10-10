@@ -1,0 +1,3 @@
+Library cannot be pushed.
+The program will look for the minilibx library at helpers/minilibx-linux/minilibx-linux/minilibx.helpers
+Should you copy manually, please paste the library in said position, or change the library header's location in fdf.h, located in the headers folder.
