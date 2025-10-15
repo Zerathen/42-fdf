@@ -18,6 +18,7 @@ int	init_map(t_map **map, int fd)
 	if (!*map)
 		return (0);
 	(*map)->height = count_lines(fd);
+	lseek(fd, 0, SEEK_SET);
 	(*map)->grid = malloc(sizeof(t_point *) * (*map)->height);
 	if (!(*map)->grid)
 		return (free(*map), 0);
