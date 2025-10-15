@@ -25,7 +25,7 @@ int	count_lines(int fd)
 		free(line);
 		line = get_next_line(fd);
 	}
-	lseek(fd, 0, SEEK_SET);
+	get_next_line(-1);
 	return (count);
 }
 
